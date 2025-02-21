@@ -11,10 +11,15 @@
   --forground: beige;
   --white: white;
   --borderColor: rgba(128, 128, 128, 0.205);
-  --transparent: rgba(255, 255, 255, 0.473);
+  --transparent: rgba(255, 255, 255, 0);
 
   --mobileNavBg: rgb(56, 0, 58);
   --mobileNavForground: rgba(0, 0, 0, 0.404);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main-container {
@@ -29,13 +34,13 @@
   display: flex;
   align-items: center;
   height: 72px;
-  background-color: var(--primary);
+  background-color: var(--transparent);
   color: var(--white);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 2px 2px 4px rgb(223, 223, 223);
+  transition: all 1s;
 }
 #main-header > div {
   display: flex;
@@ -49,11 +54,6 @@
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
-#main-header nav a {
-  text-decoration: none;
-  color: var(--white);
 }
 
 #menu-btn {
@@ -116,10 +116,10 @@
   }
 }
 
-main {
+/* main {
   margin-top: 72px;
   min-height: 500px;
-}
+} */
 
 #main-footer {
   border-top: 1px solid var(--borderColor);
